@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+    <form action="Formulario.php" method="POST" name="Formulario">
+        <fieldset>
+            <center>
+                <legend>Datos Personales</legend>
+                Nombre: <input type="text" name="nombre" placeholder="Escribe tu nombre" required pattern="[A-Za-z]" +{1-30}>
+                <br>
+                <br> Apellidos: <input type="text" name="apellidos" placeholder="Escribe tus apellidos" required pattern="[A-Za-z]" +{1-30}>
+                <br>
+                <br> Edad: <input type="number" name="edad" placeholder="Seleccione su edad" max="120" min="1">
+                <br>
+                <br> Correo: <input type="email" name="correo" placeholder="Escribe tu correo" required />
+                <br>
+                <br> Fecha:
+                <input type="date" name="fecha" placeholder="selecciona la fecha">
+                <br>
+                <br> Elige un color:
+                <input type="color" name="color" placeholder="color">
+                <br>
+                <br>
+                <input type="text" placeholder="alumnos" list="alumnos" name="lista">
+                <datalist id="alumnos">
+                <option value="Angel Albieri"></option>
+                <option value="Yareli Lizeth"></option>
+                <option value="Isabel Adriana"></option>
+            </datalist>
+
+                <input type="submit" name="Enviar">
+                <input type="reset" value="Limpiar" name="Limpiar">
+            </center>
+        </fieldset>
+    </form>
+</body>
+
+</html>
